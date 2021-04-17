@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+  
+body{
+
+	background-image: url(../image/photo_backgrounds_textures_app04.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px ;
+	
+}
+
+	.menyu{
+		background-color:  rgba(171,177,186,0.6);
+		text-align: center;
+	}
+
+	.menyu ul {
+		display: inline-flex;
+		list-style: none;
+		color:#fff;
+	}
+
+	.menyu ul li{
+		width: 300px;
+		margin: 15px;
+		padding: 15px;
+	}
+
+	.menyu ul li a{
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.li1,.menyu ul li:hover {
+		background-color: rgba(240,240,240,0.7);
+		border-radius: 3px;
+
+	}
+
+	.menyu .fa{
+		margin-right: 8px;
+	}
+
+	.lesson {
+		display: none;
+	}
+
+	.menyu ul li:hover .lesson {
+		display: block;
+		position: absolute;
+		background-color: rgba(240,240,240,0.7);
+		margin-top: 15px;
+		margin-left: -15px;
+	}
+
+	.menyu ul li:hover .lesson ul{
+		display: block;
+		margin: 20px;
+	}
+
+	.menyu ul li:hover .lesson ul li{
+		width: 200px;
+		padding: 10px;
+		border-bottom: 1px solid #fff;
+		background: transparent;
+		text-align: left;
+	}
+
+	.menyu ul li:hover .lesson ul li:last-child{
+		border-bottom: none;
+	}
+
+	.menyu ul li:hover .lesson ul li a:hover{
+		color:#000;
+	}
+
+/*
+	.text{
+		position:absolute;
+		width: 750px;
+		height: 150px;
+		padding-left:  40px;
+		border: 20px double #fff;
+		top: 50%;
+		left:27%;
+		border-radius: 20px;
+		color: #fff;
+		font-size: 60px;
+		text-shadow: 5px 5px 10px;
+	} */
+
+	
+	
+	.text{
+		position: absolute;
+		top: 50%;
+		left: 30%;
+		transform: translate(-50% -50%);
+	}
+
+	.text h1{
+		padding: 0;
+		margin: 0;
+		color: #fff;
+		text-shadow: 0 2px 0 rgba(0,0,0,.5);
+		font-size: 60px;
+		border:20px double #fff;
+		border-radius: 25px;
+		width: 650px;
+		padding: 10px;
+	}
+
+	span:before {
+		content: '';
+		animation:animate infinite 8s;
+	}
+
+
+	@keyframes animate {
+		0%{
+			content:'Freelancer';
+		}
+
+		20%{
+			content:'Coder ' ;
+		}
+
+		40%{
+			content:'Photographer';
+		}
+
+		60%{
+			content:'Student';
+		}
+
+		80%{
+			content:'Designer';
+		}
+
+		100%{
+			content:'Developer';
+		}
+	}
